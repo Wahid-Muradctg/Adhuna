@@ -1,0 +1,423 @@
+/* ============================================
+   RESPONSIVE CSS - Tablet & Mobile
+   ============================================ */
+
+/* ── Global overflow fix ── */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+}
+
+/* Clip any element that could bleed outside viewport */
+main,
+header,
+footer,
+section {
+    overflow-x: clip;
+    max-width: 100vw;
+}
+
+/* Prevent AOS animations from causing horizontal scrollbar */
+[data-aos] {
+    overflow: hidden;
+}
+
+/* ============================================
+   TABLET (768px – 991px)
+   ============================================ */
+@media (max-width: 991.98px) {
+
+    /* ── Navbar / Offcanvas ── */
+    .navbar {
+        padding-inline: 0;
+    }
+
+    .offcanvas {
+        max-width: 280px !important;
+    }
+
+    .offcanvas-body {
+        padding: 1rem;
+    }
+
+    /* Dropdown menu left-aligned, no weird spacing */
+    .offcanvas-body .navbar-nav .nav-item .dropdown-menu {
+        box-shadow: none;
+        padding: 0 !important;
+        margin-top: 0.25rem;
+        background: transparent;
+    }
+
+    .offcanvas-body .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+        padding-left: 0;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    /* Nav links align to start */
+    .offcanvas-body .navbar-nav {
+        align-items: flex-start !important;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .offcanvas-body .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    .offcanvas-body .navbar-nav .nav-item .nav-link {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    /* ── Intro section – background fix ── */
+    #intro {
+        height: auto;
+        min-height: 70vh;
+        padding-block: 8rem 6rem;
+        background-size:auto;
+        background-position: center center;
+        
+    }
+     #intro .intro-text{
+        margin-top: 4rem;
+     }
+
+    #intro .intro-text h1 {
+        font-size: 1.6rem;
+    }
+
+    /* ── About section ── */
+    #about .container {
+        padding-inline: 1.5rem;
+    }
+
+    #about .about-img img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    /* ── Factory section ── */
+    #factory .col-md-6 {
+        margin-bottom: 1.5rem;
+    }
+
+    /* ── Board section ── */
+    .card {
+        max-height: none;
+    }
+
+    /* ── Product link section ── */
+    #product-link .row {
+        text-align: center;
+    }
+
+    #product-link .text-end {
+        text-align: center !important;
+    }
+
+    /* ── Contact section ── */
+    #contact .contact-watermark {
+        font-size: 8rem;
+        letter-spacing: 1rem;
+    }
+
+    /* ── Footer ── */
+    #footer .col-lg-7,
+    #footer .col-lg-2 {
+        margin-top: 2rem;
+    }
+
+    .certificate {
+        justify-content: flex-start;
+    }
+
+    .certificate img {
+        max-height: 120px;
+    }
+}
+
+
+/* ============================================
+   MOBILE (max-width: 767px)
+   ============================================ */
+@media (max-width: 767.98px) {
+
+    /* ── Global typography scale-down ── */
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    /* ── Navbar / Offcanvas ── */
+    .navbar .container {
+        padding-inline: 12px;
+
+        .navbar-toggler {
+            padding: 0 !important;
+        }
+    }
+
+    .offcanvas {
+        max-width: 330px !important;
+        transition: all 0.4s cubic-bezier(.59, .14, .09, .5);
+    }
+
+    .offcanvas-body {
+        padding: 0;
+
+    }
+
+    /* Nav links: left-aligned, no centering */
+    .offcanvas-body .navbar-nav {
+        align-items: flex-start !important;
+        gap: 1.5rem !important;
+        padding-left: 0;
+        width: 100%;
+        padding-top: 1rem;
+
+    }
+
+    .offcanvas-body .navbar-nav .nav-item {
+        width: 100%;
+        border-bottom: 1px solid #000;
+    }
+
+    .offcanvas-body .navbar-nav .nav-item .nav-link {
+        padding: 0.6rem 0 0.6rem 1rem;
+        text-align: left;
+
+    }
+
+    /* Dropdown – remove extra space, left-align */
+    .offcanvas-body .navbar-nav .nav-item .dropdown-menu {
+        box-shadow: none;
+        padding: 0 !important;
+        padding-left: 0 !important;
+        margin-top: 0;
+        background: transparent;
+        border: none !important;
+
+
+    }   
+
+    .offcanvas-body .navbar-nav .nav-item .dropdown-menu li {
+        border-bottom: 1px solid #000;
+
+    }
+
+    .offcanvas-body .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+        padding: 0.7rem 0 .7rem 1rem;
+        margin-block: 0.25rem;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    /* ── Intro section – background image fit ── */
+    #intro {
+        height: auto;
+        min-height: 60vh;
+        padding-block: 8rem 4rem;
+        background-size: cover;
+        background-position: center center;
+    }
+#intro .intro-text{
+    margin-left: 0.5rem;
+}
+    #intro .intro-text p {
+        font-size: 0.7rem;
+        letter-spacing: 0.05rem;
+    }
+
+    #intro .intro-text h1 {
+        font-size: 1.5rem;
+        line-height: 130%;
+    }
+
+    #intro .intro-text .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 11px;
+    }
+
+    /* ── About section ── */
+    #about {
+        padding: 4rem 0 2rem;
+    }
+
+    #about .container {
+        padding-inline: 1rem;
+    }
+
+    #about h2 {
+        font-size: 1.8rem;
+    }
+
+    #about .about-img img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    /* ── Clients carousel ── */
+    #clints {
+        padding: 40px 0;
+    }
+
+    .img-wraper {
+        width: 180px;
+        height: 100px;
+        flex: 0 0 180px;
+    }
+
+    .carosul-wraper {
+        height: 110px;
+    }
+
+    .carosul-wraper::before,
+    .carosul-wraper::after {
+        width: 40px;
+    }
+
+    /* ── Factory & Employees ── */
+    #factory,
+    #employ {
+        padding: 3rem 0;
+    }
+
+    #factory .col-sm-12,
+    #employ .col-sm-12 {
+        margin-bottom: 1rem;
+    }
+
+    .factory-wraper {
+        padding: 1.5rem 1rem;
+    }
+
+    .factory-wraper .factory-txt h4 {
+        font-size: 18px;
+    }
+
+    /* ── Board section ── */
+    #board {
+        padding: 3rem 0;
+    }
+
+    .card {
+        max-height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .card .card-body {
+        margin-top: 1.5rem !important;
+    }
+
+    /* ── Product link section ── */
+    #product-link {
+        padding: 3rem 0;
+    }
+
+    #product-link .row {
+        text-align: center;
+    }
+
+    #product-link .text-end {
+        text-align: center !important;
+    }
+
+    #product-link h3 {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+
+    #product-link .row:last-child .text-end {
+        order: 2;
+    }
+
+    /* ── Contact section ── */
+    #contact {
+        padding: 3rem 0;
+    }
+
+    #contact h2 {
+        font-size: 1.6rem;
+    }
+
+    #contact .contact-watermark {
+        font-size: 5rem;
+        letter-spacing: 0.7rem;
+        bottom: -30px;
+    }
+
+    #contact .contact-form-wraper {
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    /* ── Footer ── */
+    #footer {
+        padding: 4rem 0 0;
+    }
+
+    #footer .container {
+        margin-bottom: 3rem;
+    }
+
+    #footer .col-lg-7,
+    #footer .col-lg-2 {
+        margin-top: 1.5rem;
+    }
+
+    .certificate {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .certificate img {
+        max-height: 80px;
+    }
+
+    .copyright p {
+        font-size: 0.75rem;
+    }
+}
+
+
+/* ============================================
+   SMALL MOBILE (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+
+    #intro {
+        min-height: 50vh;
+        padding-block: 7rem 3rem;
+    }
+
+    #intro .intro-text h1 {
+        font-size: 1.25rem;
+    }
+
+    #about .about-img img {
+        height: 200px;
+    }
+
+    .img-wraper {
+        width: 150px;
+        height: 80px;
+        flex: 0 0 150px;
+    }
+
+    .carosul-wraper {
+        height: 90px;
+    }
+
+    #contact .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
