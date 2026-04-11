@@ -392,7 +392,12 @@ section {
    SMALL MOBILE (max-width: 480px)
    ============================================ */
 @media (max-width: 480px) {
-
+.navbar .container{
+    padding-inline: 10px;
+    & .navbar-brand{
+        margin-inline: 0;
+    }
+}
     #intro {
         min-height: 50vh;
         padding-block: 7rem 3rem;
@@ -419,5 +424,8 @@ section {
     #contact .col-6 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    #footer .container{
+        padding-inline-start: 1rem;
     }
 }
