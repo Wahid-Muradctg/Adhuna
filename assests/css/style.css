@@ -719,6 +719,17 @@ section#breadcum {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    & h2{
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 2.8rem;
+        padding-left:6rem ;
+        cursor: pointer;
+        &:hover{
+            color: var(--secondary-color);
+        }
+    }
+
 }
 
 /* products section start */
@@ -737,7 +748,7 @@ section#breadcum {
 
 .product-wraper {
 max-width: 350px;
-min-height: 380px;
+height: auto;
     overflow: hidden;  
     border-bottom: 2px solid #cac8c885;
     cursor: pointer;
@@ -752,7 +763,7 @@ min-height: 380px;
 
 .product-wraper .img-wraper {
     width: 100%;
-    height: 321px;
+    height: auto;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -811,3 +822,123 @@ hr{
 /* products section end */
 
 /* ----Products page end---- */
+/* ----machine page start---- */
+#machineries{
+    padding: 7rem 0 5rem;
+    .container {
+        padding-inline: 6rem;
+    };
+    .img-wraper{
+        max-height:170px ;
+    }
+}
+/* ----machine page end---- */
+/* ----ofset unit page start---- */
+#offset-unit{
+    padding: 7rem 0 5rem;
+    .container {
+        padding-inline: 5.5rem;
+        .row{
+            height: 90vh;
+        }
+    };
+
+}
+table th,
+table td{
+    border-color: var(--secondary-color) !important;
+}
+table tbody tr td{
+    font-family: var(--font-family);
+    font-size: .89rem;
+}
+table tbody tr:hover td{
+    background-color: #edfffdcc;
+}
+/* ----ofset unit page end---- */
+/* ----label unit page start---- */
+#label-unit{
+    padding: 7rem 0 5rem;
+    .container {
+        padding-inline: 5.5rem;
+        .row{
+            height: 90vh;
+        }
+    };
+
+}
+/* ----label unit page end---- */
+/* ----silica unit page start---- */
+#silica-unit{
+    padding: 7rem 0 5rem;
+    .container {
+        padding-inline: 5.5rem;
+        .row{
+            height: 90vh;         
+        }
+    };
+    hr.big{
+        margin-top: 200px;
+    }
+
+}
+/* ----silica unit page end---- */
+/* ----heat unit page start---- */
+#heat-unit{
+    padding: 7rem 0 5rem;
+    .container {
+        padding-inline: 5.5rem;
+        .row{
+            height: 100vh;
+            background-color: var(--second-bg-color)
+
+        }
+    };
+
+}
+#heat-unit .row .img-wraper{
+    height: auto;
+    width: 100%;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+#heat-unit .row .text{
+background-color: var(--bg-color);
+}
+
+/* ----heat unit page end---- */
+/* ----partners  page start---- */
+#partners{
+    padding: 7rem 0 5rem;
+    .container {
+        padding-inline: 5.5rem;
+        .row{
+            height: 100vh;
+        }
+    };
+
+}
+#partners .row .img-wraper{
+    height: 230px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+          opacity: 0.5;
+    filter: grayscale(1);
+    transition: opacity 0.4s, filter 0.4s;
+    &:hover{
+        opacity: 1;
+    filter: grayscale(0);
+    }    
+    }
+}
+
+/* ----partners  page end---- */
